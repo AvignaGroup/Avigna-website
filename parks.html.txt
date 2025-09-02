@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avigna Logistics Parks - Pan-India Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corporate-navy { background-color: #0d2c4b; }
+        .text-corporate-navy { color: #0d2c4b; }
+        .bg-action-blue { background-color: #007bff; }
+        .text-action-blue { color: #007bff; }
+        .border-action-blue { border-color: #007bff; }
+        .bg-light-grey { background-color: #f7f9fa; }
+        .parks-hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1616401784845-180842464539?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom styles for filter buttons */
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background-color: #0d2c4b;
+            color: white;
+            border-color: #0d2c4b;
+        }
+    </style>
+</head>
+<body class="bg-light-grey">
+
+    <!-- Header -->
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-3xl font-bold text-corporate-navy">AVIGNA</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-action-blue">About Us</a>
+                <a href="parks.html" class="text-action-blue font-medium border-b-2 border-action-blue">Logistics Parks</a>
+                <a href="index.html#services" class="text-gray-700 font-medium hover:text-action-blue">Services</a>
+                <a href="index.html#sustainability" class="text-gray-700 font-medium hover:text-action-blue">Sustainability</a>
+                <a href="index.html#insights" class="text-gray-700 font-medium hover:text-action-blue">Insights</a>
+                <a href="index.html#contact" class="bg-action-blue text-white font-medium py-2 px-5 rounded-lg hover:bg-opacity-90">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-6 pt-2 pb-4">
+             <a href="about.html" class="block text-gray-700 hover:text-action-blue py-2">About Us</a>
+            <a href="parks.html" class="block text-action-blue py-2">Logistics Parks</a>
+            <a href="index.html#services" class="block text-gray-700 hover:text-action-blue py-2">Services</a>
+            <a href="index.html#sustainability" class="block text-gray-700 hover:text-action-blue py-2">Sustainability</a>
+            <a href="index.html#insights" class="block text-gray-700 hover:text-action-blue py-2">Insights</a>
+            <a href="index.html#contact" class="block mt-2 bg-action-blue text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Parks Hero Section -->
+        <section class="parks-hero-bg text-white relative">
+            <div class="absolute inset-0 bg-corporate-navy/70"></div>
+            <div class="container mx-auto px-6 py-32 md:py-40 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">Our Logistics Parks</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mt-4">A portfolio of Grade-A industrial and warehousing facilities in India's most strategic locations.</p>
+            </div>
+        </section>
+
+        <!-- Parks Listing and Map Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn active text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="all">All Parks</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="bengaluru">Bengaluru</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="chennai">Chennai</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="hyderabad">Hyderabad</button>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Parks List -->
+                    <div id="parks-list" class="lg:col-span-1 space-y-6">
+                        <!-- Park Card 1 -->
+                        <div class="park-card bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500" data-city="bengaluru">
+                            <h3 class="text-2xl font-bold text-corporate-navy">Avigna Park, Hosur I</h3>
+                            <p class="text-gray-500 mb-2">Bengaluru, Karnataka</p>
+                            <p class="font-semibold text-green-600 mb-4">Status: Available for Lease</p>
+                            <div class="flex justify-between text-sm text-gray-700">
+                                <span>Total Area: <strong>1.2M sq.ft</strong></span>
+                                <span>Available: <strong>0.5M sq.ft</strong></span>
+                            </div>
+                        </div>
+                        <!-- Park Card 2 -->
+                        <div class="park-card bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500" data-city="chennai">
+                            <h3 class="text-2xl font-bold text-corporate-navy">Avigna Park, Sriperumbudur</h3>
+                            <p class="text-gray-500 mb-2">Chennai, Tamil Nadu</p>
+                            <p class="font-semibold text-blue-600 mb-4">Status: Under Development</p>
+                            <div class="flex justify-between text-sm text-gray-700">
+                                <span>Total Area: <strong>0.8M sq.ft</strong></span>
+                                <span>Available: <strong>0.8M sq.ft</strong></span>
+                            </div>
+                        </div>
+                        <!-- Park Card 3 -->
+                        <div class="park-card bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500" data-city="hyderabad">
+                            <h3 class="text-2xl font-bold text-corporate-navy">Avigna Park, Patancheru</h3>
+                            <p class="text-gray-500 mb-2">Hyderabad, Telangana</p>
+                            <p class="font-semibold text-red-600 mb-4">Status: Fully Leased</p>
+                            <div class="flex justify-between text-sm text-gray-700">
+                                <span>Total Area: <strong>0.9M sq.ft</strong></span>
+                                <span>Available: <strong>0 sq.ft</strong></span>
+                            </div>
+                        </div>
+                         <!-- Park Card 4 -->
+                        <div class="park-card bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500" data-city="bengaluru">
+                            <h3 class="text-2xl font-bold text-corporate-navy">Avigna Park, Hosur II</h3>
+                            <p class="text-gray-500 mb-2">Bengaluru, Karnataka</p>
+                            <p class="font-semibold text-green-600 mb-4">Status: Available for Lease</p>
+                            <div class="flex justify-between text-sm text-gray-700">
+                                <span>Total Area: <strong>0.6M sq.ft</strong></span>
+                                <span>Available: <strong>0.6M sq.ft</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map and 360 View -->
+                    <div class="lg:col-span-2 bg-white p-4 rounded-lg shadow-xl">
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-bold text-corporate-navy text-center mb-4">Park Locations</h3>
+                             <img src="https://placehold.co/1200x600/E2E8F0/4A5568?text=Interactive+Map+of+Park+Locations" alt="Map of Avigna's parks" class="rounded-md w-full h-96 object-cover">
+                        </div>
+                        <hr class="my-6">
+                        <div>
+                             <h3 class="text-2xl font-bold text-corporate-navy text-center mb-4">360° Virtual Tour</h3>
+                             <div class="bg-gray-200 rounded-md w-full h-96 flex items-center justify-center">
+                                 <!-- This is where the 360-degree viewer (e.g., Pannellum, Google VR View) would be embedded -->
+                                 <p class="text-gray-500">360° Park View Coming Soon</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">AVIGNA</h3>
+                    <p class="text-gray-400 text-sm">Space and Solutions for the New Economy.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="parks.html" class="text-white">Logistics Parks</a></li>
+                        <li class="mb-2"><a href="index.html#sustainability" class="text-gray-300 hover:text-white">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Development</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Leasing</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Asset Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#insights" class="text-gray-300 hover:text-white">Insights</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 text-sm mb-2">inquiries@avigna.com</p>
+                    <p class="text-gray-300 text-sm">+91 (000) 000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Avigna. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Park filtering logic
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const parkCards = document.querySelectorAll('.park-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button style
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Show/hide park cards based on filter
+                parkCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-city') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

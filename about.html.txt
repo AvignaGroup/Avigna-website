@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Avigna - Industrial & Logistics Parks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corporate-navy { background-color: #0d2c4b; }
+        .text-corporate-navy { color: #0d2c4b; }
+        .bg-steel-grey { background-color: #8d99ae; }
+        .text-steel-grey { color: #8d99ae; }
+        .bg-action-blue { background-color: #007bff; }
+        .text-action-blue { color: #007bff; }
+        .border-action-blue { border-color: #007bff; }
+        .bg-light-grey { background-color: #f7f9fa; }
+        .header-scrolled {
+            background-color: white;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+        }
+        .about-hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <!-- This header is identical to the one on the homepage for consistency. -->
+    <!-- In a real multi-page site, this would be a reusable component. -->
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <!-- Link back to the homepage -->
+                <a href="index.html" class="text-3xl font-bold text-corporate-navy">AVIGNA</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <!-- Set "About Us" as active/current page style -->
+                <a href="about.html" class="text-action-blue font-medium border-b-2 border-action-blue">About Us</a>
+                <a href="index.html#parks" class="text-gray-700 font-medium hover:text-action-blue transition duration-300">Logistics Parks</a>
+                <a href="index.html#services" class="text-gray-700 font-medium hover:text-action-blue transition duration-300">Services</a>
+                <a href="index.html#sustainability" class="text-gray-700 font-medium hover:text-action-blue transition duration-300">Sustainability</a>
+                <a href="index.html#insights" class="text-gray-700 font-medium hover:text-action-blue transition duration-300">Insights</a>
+                <a href="index.html#contact" class="bg-action-blue text-white font-medium py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-6 pt-2 pb-4">
+            <a href="about.html" class="block text-action-blue py-2">About Us</a>
+            <a href="index.html#parks" class="block text-gray-700 hover:text-action-blue py-2">Logistics Parks</a>
+            <a href="index.html#services" class="block text-gray-700 hover:text-action-blue py-2">Services</a>
+            <a href="index.html#sustainability" class="block text-gray-700 hover:text-action-blue py-2">Sustainability</a>
+            <a href="index.html#insights" class="block text-gray-700 hover:text-action-blue py-2">Insights</a>
+            <a href="index.html#contact" class="block mt-2 bg-action-blue text-white font-medium py-2 px-4 rounded-lg text-center hover:bg-opacity-90">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Us Hero Section -->
+        <section class="about-hero-bg text-white relative">
+            <div class="absolute inset-0 bg-corporate-navy/60"></div>
+            <div class="container mx-auto px-6 py-32 md:py-40 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">About Avigna</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mt-4">Building the future of India's supply chain with integrity, innovation, and a commitment to excellence.</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="pr-0 md:pr-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-corporate-navy mb-6">Our Story</h2>
+                        <p class="text-gray-600 mb-4 text-lg">Founded with the vision to transform India's logistics landscape, Avigna was established to meet the growing demand for high-quality, Grade-A industrial and warehousing infrastructure. We recognized the critical need for facilities that could support the nation's rapid economic growth and the rise of the new economy.</p>
+                        <p class="text-gray-600 mb-6 text-lg">From our first project, our focus has been unwavering: to identify and acquire strategic land parcels, develop world-class facilities, and provide our partners with the operational excellence they need to thrive. Today, Avigna is a trusted name for investors, enterprises, and brokers seeking superior value and reliable partnership.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1586956913555-235a8823793b?q=80&w=2940&auto=format&fit=crop" alt="Blueprint of a logistics park" class="rounded-lg shadow-2xl w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission, Vision, Values Section -->
+        <section class="py-20 bg-light-grey">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Mission -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-4">Our Mission</h3>
+                        <p class="text-gray-600">To be the most trusted partner in developing and managing world-class industrial and logistics real estate that empowers businesses and drives economic growth across India.</p>
+                    </div>
+                    <!-- Vision -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-4">Our Vision</h3>
+                        <p class="text-gray-600">To build a pan-India network of sustainable, technology-driven logistics parks that set new benchmarks in quality, efficiency, and customer satisfaction.</p>
+                    </div>
+                    <!-- Values -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-4">Our Values</h3>
+                        <p class="text-gray-600">Integrity, Customer-Centricity, Excellence, Innovation, and Sustainability guide every decision we make.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-corporate-navy">Our Leadership</h2>
+                    <p class="text-steel-grey mt-2 max-w-2xl mx-auto">Meet the experienced team guiding Avigna's strategic direction and growth.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Photo" alt="Team Member Name" class="w-48 h-48 mx-auto rounded-full shadow-lg mb-4">
+                        <h4 class="text-xl font-bold text-corporate-navy">Full Name</h4>
+                        <p class="text-steel-grey">Chairman & CEO</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Photo" alt="Team Member Name" class="w-48 h-48 mx-auto rounded-full shadow-lg mb-4">
+                        <h4 class="text-xl font-bold text-corporate-navy">Full Name</h4>
+                        <p class="text-steel-grey">Managing Director, Investments</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Photo" alt="Team Member Name" class="w-48 h-48 mx-auto rounded-full shadow-lg mb-4">
+                        <h4 class="text-xl font-bold text-corporate-navy">Full Name</h4>
+                        <p class="text-steel-grey">Chief Financial Officer</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Photo" alt="Team Member Name" class="w-48 h-48 mx-auto rounded-full shadow-lg mb-4">
+                        <h4 class="text-xl font-bold text-corporate-navy">Full Name</h4>
+                        <p class="text-steel-grey">Head of Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <!-- This footer is identical to the one on the homepage for consistency. -->
+    <footer id="contact" class="bg-corporate-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">AVIGNA</h3>
+                    <p class="text-gray-400 text-sm">Space and Solutions for the New Economy.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="index.html#parks" class="text-gray-300 hover:text-white">Logistics Parks</a></li>
+                        <li class="mb-2"><a href="index.html#sustainability" class="text-gray-300 hover:text-white">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Development</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Leasing</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Asset Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#insights" class="text-gray-300 hover:text-white">Insights</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 text-sm mb-2">inquiries@avigna.com</p>
+                    <p class="text-gray-300 text-sm">+91 (000) 000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Avigna. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

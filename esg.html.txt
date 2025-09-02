@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG - Environmental, Social, and Governance | Avigna Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corporate-navy { background-color: #0d2c4b; }
+        .text-corporate-navy { color: #0d2c4b; }
+        .bg-action-blue { background-color: #007bff; }
+        .text-action-blue { color: #007bff; }
+        .border-action-blue { border-color: #007bff; }
+        .bg-light-grey { background-color: #f7f9fa; }
+        .esg-hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1599389650424-a745c25a242c?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        #chatbot-window {
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-3xl font-bold text-corporate-navy">AVIGNA</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-action-blue">About Us</a>
+                <a href="parks.html" class="text-gray-700 font-medium hover:text-action-blue">Logistics Parks</a>
+                <a href="businesses.html" class="text-gray-700 font-medium hover:text-action-blue">Businesses</a>
+                <a href="esg.html" class="text-action-blue font-medium border-b-2 border-action-blue">ESG</a>
+                <a href="newsroom.html" class="text-gray-700 font-medium hover:text-action-blue">Newsroom</a>
+                <a href="index.html#contact" class="bg-action-blue text-white font-medium py-2 px-5 rounded-lg hover:bg-opacity-90">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-6 pt-2 pb-4">
+            <a href="about.html" class="block text-gray-700 hover:text-action-blue py-2">About Us</a>
+            <a href="parks.html" class="block text-gray-700 hover:text-action-blue py-2">Logistics Parks</a>
+            <a href="businesses.html" class="block text-gray-700 hover:text-action-blue py-2">Businesses</a>
+            <a href="esg.html" class="block text-action-blue py-2">ESG</a>
+            <a href="newsroom.html" class="block text-gray-700 hover:text-action-blue py-2">Newsroom</a>
+            <a href="index.html#contact" class="block mt-2 bg-action-blue text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ESG Hero Section -->
+        <section class="esg-hero-bg text-white relative">
+            <div class="absolute inset-0 bg-corporate-navy/60"></div>
+            <div class="container mx-auto px-6 py-32 md:py-40 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">Building a Sustainable Future</h1>
+                    <p class="text-lg md:text-xl text-gray-200 mt-4">At Avigna, our commitment to Environmental, Social, and Governance (ESG) principles is integral to our business strategy and a cornerstone of our long-term vision.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-corporate-navy">Our ESG Framework</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">We are dedicated to creating value for our stakeholders by building resilient, efficient, and responsible logistics infrastructure that positively impacts the environment and the communities we operate in.</p>
+            </div>
+        </section>
+        
+        <!-- ESG Pillars Section -->
+        <section class="py-20 bg-light-grey">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <!-- Environment Pillar -->
+                    <div>
+                        <div class="flex justify-center mb-4">
+                             <svg class="w-16 h-16 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5a7.5 7.5 0 1 0-15 0" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-3">Environment</h3>
+                        <p class="text-gray-600">Minimizing our ecological footprint through sustainable park development, energy efficiency, water conservation, and waste management.</p>
+                    </div>
+                    <!-- Social Pillar -->
+                    <div>
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m-7.14 5.44A9 9 0 0 1 6 18.72m0 0a9 9 0 0 1 6-15.72m-6 15.72a9 9 0 0 0 6 15.72m-6-15.72 5.72 5.72m0 0a3 3 0 0 1-4.243 4.243 3 3 0 0 1 0-4.243 3 3 0 0 1 4.243 0Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-3">Social</h3>
+                        <p class="text-gray-600">Ensuring the health, safety, and well-being of our employees and partners, and contributing to the economic development of local communities.</p>
+                    </div>
+                    <!-- Governance Pillar -->
+                    <div>
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286Zm0 13.036h.008v.008h-.008v-.008Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-corporate-navy mb-3">Governance</h3>
+                        <p class="text-gray-600">Upholding the highest standards of ethics, transparency, and corporate governance to build enduring trust with all our stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Initiatives Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-corporate-navy text-center mb-12">Our Key Initiatives</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Initiative 1 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Green Buildings</h3>
+                        <p class="text-gray-600">All our new developments are designed and built to meet or exceed national and international green building standards, incorporating sustainable materials and energy-efficient designs.</p>
+                    </div>
+                    <!-- Initiative 2 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Renewable Energy</h3>
+                        <p class="text-gray-600">We are committed to maximizing the use of renewable energy, with rooftop solar installations across our portfolio to reduce our carbon footprint.</p>
+                    </div>
+                    <!-- Initiative 3 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Water Management</h3>
+                        <p class="text-gray-600">Implementing rainwater harvesting and water recycling systems to ensure responsible water usage and conservation at all our sites.</p>
+                    </div>
+                    <!-- Initiative 4 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Health & Safety</h3>
+                        <p class="text-gray-600">Prioritizing the health and safety of our workforce and tenants with best-in-class safety protocols and regular training programs.</p>
+                    </div>
+                    <!-- Initiative 5 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Community Engagement</h3>
+                        <p class="text-gray-600">Actively engaging with local communities to create employment opportunities and support social development initiatives.</p>
+                    </div>
+                    <!-- Initiative 6 -->
+                    <div class="bg-light-grey rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-corporate-navy mb-3">Ethical Business Practices</h3>
+                        <p class="text-gray-600">Our robust governance framework ensures we operate with integrity, transparency, and accountability in all our business dealings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">AVIGNA</h3>
+                    <p class="text-gray-400 text-sm">Space and Solutions for the New Economy.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="parks.html" class="text-gray-300 hover:text-white">Logistics Parks</a></li>
+                        <li class="mb-2"><a href="esg.html" class="text-white">ESG</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Solutions</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Development</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Leasing</a></li>
+                        <li class="mb-2"><a href="businesses.html" class="text-gray-300 hover:text-white">Businesses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <ul>
+                        <li class="mb-2"><a href="newsroom.html" class="text-gray-300 hover:text-white">Newsroom</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 text-sm mb-2">inquiries@avigna.com</p>
+                    <p class="text-gray-300 text-sm">+91 (000) 000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Avigna. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT START -->
+    <div id="chatbot-container" class="fixed bottom-5 right-5 z-50">
+        <!-- Chatbot Button -->
+        <button id="chatbot-toggle" class="bg-corporate-navy text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center">
+            <svg id="chat-icon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="hidden absolute bottom-20 right-0 w-80 md:w-96 bg-white rounded-lg shadow-2xl origin-bottom-right transform scale-95 opacity-0">
+            <div class="bg-corporate-navy text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Avigna Virtual Assistant</h3>
+            </div>
+            <div id="chat-messages" class="p-4 h-96 overflow-y-auto">
+                <!-- Bot Message -->
+                <div class="flex mb-4">
+                    <div class="bg-light-grey p-3 rounded-lg max-w-xs">
+                        <p class="text-sm">Welcome to Avigna! How can I help you today?</p>
+                    </div>
+                </div>
+                 <!-- Bot Options -->
+                <div class="flex mb-4">
+                    <div class="bg-white p-3 rounded-lg max-w-xs">
+                        <button class="chat-option-btn border border-action-blue text-action-blue rounded-full py-1 px-4 text-sm w-full text-left mb-2 hover:bg-action-blue hover:text-white">Explore Logistics Parks</button>
+                        <button class="chat-option-btn border border-action-blue text-action-blue rounded-full py-1 px-4 text-sm w-full text-left mb-2 hover:bg-action-blue hover:text-white">Leasing Enquiry</button>
+                        <button class="chat-option-btn border border-action-blue text-action-blue rounded-full py-1 px-4 text-sm w-full text-left hover:bg-action-blue hover:text-white">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex">
+                    <input id="chat-input" type="text" placeholder="Type your message..." class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-action-blue">
+                    <button id="chat-send" class="bg-corporate-navy text-white px-4 rounded-r-md">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHATBOT END -->
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Chatbot toggle
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotWindow = document.getElementById('chatbot-window');
+        const chatIcon = document.getElementById('chat-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        chatbotToggle.addEventListener('click', () => {
+            if (chatbotWindow.classList.contains('hidden')) {
+                chatbotWindow.classList.remove('hidden');
+                setTimeout(() => {
+                    chatbotWindow.classList.remove('opacity-0', 'scale-95');
+                }, 10);
+                chatIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                chatbotWindow.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    chatbotWindow.classList.add('hidden');
+                }, 300);
+                chatIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
