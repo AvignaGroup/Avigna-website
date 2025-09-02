@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsroom - Avigna Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corporate-navy { background-color: #0d2c4b; }
+        .text-corporate-navy { color: #0d2c4b; }
+        .bg-action-blue { background-color: #007bff; }
+        .text-action-blue { color: #007bff; }
+        .border-action-blue { border-color: #007bff; }
+        .bg-light-grey { background-color: #f7f9fa; }
+        .news-hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .filter-btn.active {
+            background-color: #0d2c4b;
+            color: white;
+            border-color: #0d2c4b;
+        }
+    </style>
+</head>
+<body class="bg-light-grey">
+
+    <!-- Header -->
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-3xl font-bold text-corporate-navy">AVIGNA</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-action-blue">About Us</a>
+                <a href="parks.html" class="text-gray-700 font-medium hover:text-action-blue">Logistics Parks</a>
+                <a href="businesses.html" class="text-gray-700 font-medium hover:text-action-blue">Businesses</a>
+                <a href="esg.html" class="text-gray-700 font-medium hover:text-action-blue">ESG</a>
+                <a href="newsroom.html" class="text-action-blue font-medium border-b-2 border-action-blue">Newsroom</a>
+                <a href="index.html#contact" class="bg-action-blue text-white font-medium py-2 px-5 rounded-lg hover:bg-opacity-90">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-6 pt-2 pb-4">
+            <a href="about.html" class="block text-gray-700 hover:text-action-blue py-2">About Us</a>
+            <a href="parks.html" class="block text-gray-700 hover:text-action-blue py-2">Logistics Parks</a>
+            <a href="businesses.html" class="block text-gray-700 hover:text-action-blue py-2">Businesses</a>
+            <a href="esg.html" class="block text-gray-700 hover:text-action-blue py-2">ESG</a>
+            <a href="newsroom.html" class="block text-action-blue py-2">Newsroom</a>
+            <a href="index.html#contact" class="block mt-2 bg-action-blue text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Newsroom Hero Section -->
+        <section class="news-hero-bg text-white relative">
+            <div class="absolute inset-0 bg-corporate-navy/70"></div>
+            <div class="container mx-auto px-6 py-32 md:py-40 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">Newsroom</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mt-4">Stay updated with the latest announcements, media coverage, and insights from Avigna.</p>
+            </div>
+        </section>
+
+        <!-- News Grid Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn active text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="all">All News</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="press-release">Press Releases</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="in-the-news">In The News</button>
+                    <button class="filter-btn text-lg font-medium py-2 px-6 border-2 border-gray-300 rounded-full" data-filter="insights">Insights</button>
+                </div>
+
+                <!-- Articles Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=3000&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">September 02, 2025 • Press Release</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">Avigna to Develop a 1 Million Sq. Ft. Logistics Park in Hosur, Bengaluru</h3>
+                            <p class="text-gray-600 text-sm">This new Grade-A facility will cater to the increasing demand from e-commerce and 3PL sectors in the region...</p>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1520607162502-ac42699a70fc?q=80&w=2940&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">August 15, 2025 • In The News</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">The Economic Times: How Warehousing is Powering India's Growth Story</h3>
+                            <p class="text-gray-600 text-sm">Avigna's Managing Director discusses the future of logistics real estate and the impact of technology...</p>
+                        </div>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">July 28, 2025 • Insights</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">The Rise of Sustainable Warehousing: Building for a Greener Future</h3>
+                            <p class="text-gray-600 text-sm">Exploring the benefits of ESG compliance, from solar power integration to water conservation efforts...</p>
+                        </div>
+                    </div>
+                    <!-- Article 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1614093933936-e3989a3a9925?q=80&w=2940&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">July 10, 2025 • Press Release</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">Avigna Secures Major Lease Agreement with Leading FMCG Player in Chennai</h3>
+                            <p class="text-gray-600 text-sm">A 500,000 sq. ft. dedicated facility at Avigna Park, Sriperumbudur has been leased for a 10-year term...</p>
+                        </div>
+                    </div>
+                     <!-- Article 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2940&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">June 21, 2025 • In The News</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">Livemint: Inside the High-Tech Warehouses of Tomorrow</h3>
+                            <p class="text-gray-600 text-sm">A feature on the automation and technology being integrated into modern logistics parks by firms like Avigna...</p>
+                        </div>
+                    </div>
+                     <!-- Article 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2940&auto=format&fit=crop" alt="News article image">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500 mb-2">May 30, 2025 • Insights</p>
+                            <h3 class="text-xl font-bold text-corporate-navy mb-3 leading-snug">Location Analysis: Why Hyderabad is the Next Big Logistics Hub</h3>
+                            <p class="text-gray-600 text-sm">A deep dive into the strategic advantages, infrastructure growth, and investment potential of the region...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-16">
+                    <button class="bg-corporate-navy text-white font-medium py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">Load More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">AVIGNA</h3>
+                    <p class="text-gray-400 text-sm">Space and Solutions for the New Economy.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="parks.html" class="text-gray-300 hover:text-white">Logistics Parks</a></li>
+                        <li class="mb-2"><a href="businesses.html" class="text-gray-300 hover:text-white">Businesses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Solutions</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Development</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Leasing</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <ul>
+                        <li class="mb-2"><a href="newsroom.html" class="text-white">Newsroom</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 text-sm mb-2">inquiries@avigna.com</p>
+                    <p class="text-gray-300 text-sm">+91 (000) 000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Avigna. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+

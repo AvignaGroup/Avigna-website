@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries We Serve - Avigna Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corporate-navy { background-color: #0d2c4b; }
+        .text-corporate-navy { color: #0d2c4b; }
+        .bg-action-blue { background-color: #007bff; }
+        .text-action-blue { color: #007bff; }
+        .border-action-blue { border-color: #007bff; }
+        .bg-light-grey { background-color: #f7f9fa; }
+        .businesses-hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1578575437130-5278ce682698?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-3xl font-bold text-corporate-navy">AVIGNA</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-action-blue">About Us</a>
+                <a href="parks.html" class="text-gray-700 font-medium hover:text-action-blue">Logistics Parks</a>
+                <a href="businesses.html" class="text-action-blue font-medium border-b-2 border-action-blue">Businesses</a>
+                <a href="index.html#sustainability" class="text-gray-700 font-medium hover:text-action-blue">Sustainability</a>
+                <a href="newsroom.html" class="text-gray-700 font-medium hover:text-action-blue">Newsroom</a>
+                <a href="index.html#contact" class="bg-action-blue text-white font-medium py-2 px-5 rounded-lg hover:bg-opacity-90">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white px-6 pt-2 pb-4">
+             <a href="about.html" class="block text-gray-700 hover:text-action-blue py-2">About Us</a>
+            <a href="parks.html" class="block text-gray-700 hover:text-action-blue py-2">Logistics Parks</a>
+            <a href="businesses.html" class="block text-action-blue py-2">Businesses</a>
+            <a href="index.html#sustainability" class="block text-gray-700 hover:text-action-blue py-2">Sustainability</a>
+            <a href="newsroom.html" class="block text-gray-700 hover:text-action-blue py-2">Newsroom</a>
+            <a href="index.html#contact" class="block mt-2 bg-action-blue text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Businesses Hero Section -->
+        <section class="businesses-hero-bg text-white relative">
+            <div class="absolute inset-0 bg-corporate-navy/60"></div>
+            <div class="container mx-auto px-6 py-32 md:py-40 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">Tailored Solutions for Every Business</h1>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mt-4">We understand the unique demands of your industry and provide specialized infrastructure to drive your success.</p>
+            </div>
+        </section>
+
+        <!-- Intro Text Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-corporate-navy">Partnering with Industry Leaders</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">Avigna's customer-centric approach means we go beyond providing space. We deliver integrated solutions that enhance operational efficiency, ensure supply chain resilience, and support the growth of our diverse client base across India's most vital economic sectors.</p>
+            </div>
+        </section>
+
+        <!-- Business Sectors Grid Section -->
+        <section class="py-20 bg-light-grey">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Sector 1: E-Commerce & Retail -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1562967915-92ae0c0a3b68?q=80&w=2940&auto=format&fit=crop" alt="E-Commerce warehouse">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">E-Commerce & Retail</h3>
+                            <p class="text-gray-600">Our parks are strategically located near major consumption centers, enabling faster last-mile delivery. We offer scalable spaces with optimized layouts for efficient sorting, storage, and fulfillment operations.</p>
+                        </div>
+                    </div>
+                    <!-- Sector 2: Third-Party Logistics (3PL) -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1587293852726-70cdb120d5ae?q=80&w=2940&auto=format&fit=crop" alt="Trucks at a loading dock">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">Third-Party Logistics (3PL)</h3>
+                            <p class="text-gray-600">We provide flexible, multi-user facilities with high-grade specifications that allow 3PL providers to optimize their distribution networks and serve a wide range of clients with maximum efficiency and reliability.</p>
+                        </div>
+                    </div>
+                    <!-- Sector 3: Manufacturing & Automotive -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1580992362923-1d3741258c70?q=80&w=2940&auto=format&fit=crop" alt="Automotive manufacturing plant">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">Manufacturing & Automotive</h3>
+                            <p class="text-gray-600">Our facilities feature high-strength floors, ample power supply, and robust infrastructure to support light manufacturing and assembly lines, helping streamline production and supply chain logistics.</p>
+                        </div>
+                    </div>
+                    <!-- Sector 4: FMCG -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1550989460-05042b545193?q=80&w=2807&auto=format&fit=crop" alt="Fast Moving Consumer Goods on shelves">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">FMCG</h3>
+                            <p class="text-gray-600">We offer Grade-A compliant warehouses that meet the stringent hygiene and quality standards of the FMCG sector, ensuring product integrity from storage to distribution.</p>
+                        </div>
+                    </div>
+                    <!-- Sector 5: Cold Storage -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1628711413926-c958e479354e?q=80&w=2960&auto=format&fit=crop" alt="Cold storage facility interior">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">Cold Storage</h3>
+                            <p class="text-gray-600">Our parks are equipped to support the development of temperature-controlled and cold storage facilities, vital for the pharmaceutical, agricultural, and processed food industries.</p>
+                        </div>
+                    </div>
+                     <!-- Sector 6: Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1616013337776-656842183c27?q=80&w=2940&auto=format&fit=crop" alt="Engineering components">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-corporate-navy mb-3">Engineering</h3>
+                            <p class="text-gray-600">We provide robust infrastructure capable of handling heavy machinery and components, supporting the storage and logistics needs of the heavy engineering sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">AVIGNA</h3>
+                    <p class="text-gray-400 text-sm">Space and Solutions for the New Economy.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="parks.html" class="text-gray-300 hover:text-white">Logistics Parks</a></li>
+                        <li class="mb-2"><a href="businesses.html" class="text-white">Businesses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Solutions</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Development</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Leasing</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-gray-300 hover:text-white">Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#insights" class="text-gray-300 hover:text-white">Insights</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-300 text-sm mb-2">inquiries@avigna.com</p>
+                    <p class="text-gray-300 text-sm">+91 (000) 000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Avigna. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
